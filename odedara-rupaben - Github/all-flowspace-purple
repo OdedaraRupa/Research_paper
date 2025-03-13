@@ -1,0 +1,109 @@
+#-----h3 to h4 
+fvctl -n add-flowspace pfs1 2 1 in_port=1,nw_src=10.0.0.3,nw_dst=10.0.0.4 purple=7
+
+fvctl -n add-flowspace pfs2 2 1 in_port=2,nw_src=10.0.0.4,nw_dst=10.0.0.3 purple=7
+
+#--------------H3 to h5
+#..............e2
+fvctl -n add-flowspace pfs3 2 1 in_port=1,nw_src=10.0.0.3,nw_dst=10.0.0.5 purple=7
+fvctl -n add-flowspace pfs4 2 1 in_port=3,nw_src=10.0.0.5,nw_dst=10.0.0.3 purple=7
+ #-------------a1
+fvctl -n add-flowspace pfs5 9 1 in_port=2,nw_src=10.0.0.3,nw_dst=10.0.0.5 purple=7
+fvctl -n add-flowspace pfs6 9 1 in_port=3,nw_src=10.0.0.5,nw_dst=10.0.0.3 purple=7
+
+#-------------c1
+
+fvctl -n add-flowspace pfs7 17 1 in_port=1,nw_src=10.0.0.3,nw_dst=10.0.0.5 purple=7
+fvctl -n add-flowspace pfs8 17 1 in_port=2,nw_src=10.0.0.5,nw_dst=10.0.0.3 purple=7
+
+#-----------a3
+
+fvctl -n add-flowspace pfs9 11 1 in_port=3,nw_src=10.0.0.3,nw_dst=10.0.0.5 purple=7
+fvctl -n add-flowspace pfs10 11 1 in_port=1,nw_src=10.0.0.5,nw_dst=10.0.0.3 purple=7
+
+#-----------e3
+fvctl -n add-flowspace pfs11 3 1 in_port=3,nw_src=10.0.0.3,nw_dst=10.0.0.5 purple=7
+fvctl -n add-flowspace pfs12 3 1 in_port=1,nw_src=10.0.0.5,nw_dst=10.0.0.3 purple=7
+
+
+#---------H3 to h6
+
+#..............e2
+fvctl -n add-flowspace pfs13 2 1 in_port=1,nw_src=10.0.0.3,nw_dst=10.0.0.6 purple=7
+fvctl -n add-flowspace pfs14 2 1 in_port=3,nw_src=10.0.0.6,nw_dst=10.0.0.3 purple=7
+ #-------------a1
+fvctl -n add-flowspace pfs15 9 1 in_port=2,nw_src=10.0.0.3,nw_dst=10.0.0.6 purple=7
+fvctl -n add-flowspace pfs16 9 1 in_port=3,nw_src=10.0.0.6,nw_dst=10.0.0.3 purple=7
+
+#-------------c1
+
+fvctl -n add-flowspace pfs17 17 1 in_port=1,nw_src=10.0.0.3,nw_dst=10.0.0.6 purple=7
+fvctl -n add-flowspace pfs18 17 1 in_port=2,nw_src=10.0.0.6,nw_dst=10.0.0.3 purple=7
+
+#-----------a3
+
+fvctl -n add-flowspace pfs19 11 1 in_port=3,nw_src=10.0.0.3,nw_dst=10.0.0.6 purple=7
+fvctl -n add-flowspace pfs20 11 1 in_port=1,nw_src=10.0.0.6,nw_dst=10.0.0.3 purple=7
+
+#-----------e3
+fvctl -n add-flowspace pfs21 3 1 in_port=3,nw_src=10.0.0.3,nw_dst=10.0.0.6 purple=7
+fvctl -n add-flowspace pfs22 3 1 in_port=2,nw_src=10.0.0.6,nw_dst=10.0.0.3 purple=7
+
+
+#---------------------h4
+
+#--------------------h4 to h5 
+
+
+#..............e2
+fvctl -n add-flowspace pfs23 2 1 in_port=2,nw_src=10.0.0.4,nw_dst=10.0.0.5 purple=7
+fvctl -n add-flowspace pfs24 2 1 in_port=3,nw_src=10.0.0.5,nw_dst=10.0.0.4 purple=7
+ #-------------a1
+fvctl -n add-flowspace pfs25 9 1 in_port=2,nw_src=10.0.0.4,nw_dst=10.0.0.5 purple=7
+fvctl -n add-flowspace pfs26 9 1 in_port=3,nw_src=10.0.0.5,nw_dst=10.0.0.4 purple=7
+
+#-------------c1
+
+fvctl -n add-flowspace pfs27 17 1 in_port=1,nw_src=10.0.0.4,nw_dst=10.0.0.5 purple=7
+fvctl -n add-flowspace pfs28 17 1 in_port=2,nw_src=10.0.0.5,nw_dst=10.0.0.4 purple=7
+
+#-----------a3
+
+fvctl -n add-flowspace pfs29 11 1 in_port=3,nw_src=10.0.0.4,nw_dst=10.0.0.5 purple=7
+fvctl -n add-flowspace pfs30 11 1 in_port=1,nw_src=10.0.0.5,nw_dst=10.0.0.4 purple=7
+
+#-----------e3
+fvctl -n add-flowspace pfs31 3 1 in_port=3,nw_src=10.0.0.4,nw_dst=10.0.0.5 purple=7
+fvctl -n add-flowspace pfs32 3 1 in_port=1,nw_src=10.0.0.5,nw_dst=10.0.0.4 purple=7
+
+
+#--------------------h4 to h6 
+
+
+
+#..............e2
+fvctl -n add-flowspace pfs35 2 1 in_port=2,nw_src=10.0.0.4,nw_dst=10.0.0.6 purple=7
+fvctl -n add-flowspace pfs36 2 1 in_port=3,nw_src=10.0.0.6,nw_dst=10.0.0.4 purple=7
+ #-------------a1
+fvctl -n add-flowspace pfs37 9 1 in_port=2,nw_src=10.0.0.4,nw_dst=10.0.0.6 purple=7
+fvctl -n add-flowspace pfs38 9 1 in_port=3,nw_src=10.0.0.6,nw_dst=10.0.0.4 purple=7
+
+#-------------c1
+
+fvctl -n add-flowspace pfs39 17 1 in_port=1,nw_src=10.0.0.4,nw_dst=10.0.0.6 purple=7
+fvctl -n add-flowspace pfs40 17 1 in_port=2,nw_src=10.0.0.6,nw_dst=10.0.0.4 purple=7
+
+#-----------a3
+
+fvctl -n add-flowspace pfs41 11 1 in_port=3,nw_src=10.0.0.4,nw_dst=10.0.0.6 purple=7
+fvctl -n add-flowspace pfs42 11 1 in_port=1,nw_src=10.0.0.6,nw_dst=10.0.0.4 purple=7
+
+#-----------e3
+fvctl -n add-flowspace pfs43 3 1 in_port=3,nw_src=10.0.0.4,nw_dst=10.0.0.6 purple=7
+fvctl -n add-flowspace pfs44 3 1 in_port=2,nw_src=10.0.0.6,nw_dst=10.0.0.4 purple=7
+
+
+
+#--------------h5 to h6
+fvctl -n add-flowspace pfs33 3 1 in_port=1,nw_src=10.0.0.5,nw_dst=10.0.0.6 purple=7
+fvctl -n add-flowspace pfs34 3 1 in_port=2,nw_src=10.0.0.6,nw_dst=10.0.0.5 purple=7

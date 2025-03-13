@@ -1,0 +1,55 @@
+#-----------h12 to h13
+
+fvctl -n add-flowspace rfs1 6 1 in_port=2,nw_src=10.0.0.12,nw_dst=10.0.0.13 red=7
+fvctl -n add-flowspace rfs2 6 1 in_port=4,nw_src=10.0.0.13,nw_dst=10.0.0.12 red=7
+
+#-----------a6
+fvctl -n add-flowspace rfs3 14 1 in_port=2,nw_src=10.0.0.12,nw_dst=10.0.0.13 red=7
+fvctl -n add-flowspace rfs4 14 1 in_port=4,nw_src=10.0.0.13,nw_dst=10.0.0.12 red=7
+
+#-----------c4
+fvctl -n add-flowspace rfs5 20 1 in_port=3,nw_src=10.0.0.12,nw_dst=10.0.0.13 red=7
+fvctl -n add-flowspace rfs6 20 1 in_port=4,nw_src=10.0.0.13,nw_dst=10.0.0.12 red=7
+
+#-----------a8
+
+fvctl -n add-flowspace rfs7 16 1 in_port=4,nw_src=10.0.0.12,nw_dst=10.0.0.13 red=7
+fvctl -n add-flowspace rfs8 16 1 in_port=1,nw_src=10.0.0.13,nw_dst=10.0.0.12 red=7
+
+#-----------e7
+
+fvctl -n add-flowspace rfs9 7 1 in_port=4,nw_src=10.0.0.12,nw_dst=10.0.0.13 red=7
+fvctl -n add-flowspace rfs10 7 1 in_port=1,nw_src=10.0.0.13,nw_dst=10.0.0.12 red=7
+
+#-----------h12 to h14
+#-----------e6
+
+fvctl -n add-flowspace rfs11 6 1 in_port=2,nw_src=10.0.0.12,nw_dst=10.0.0.14 red=7
+fvctl -n add-flowspace rfs12 6 1 in_port=4,nw_src=10.0.0.14,nw_dst=10.0.0.12 red=7
+
+#-----------a6
+
+fvctl -n add-flowspace rfs13 14 1 in_port=2,nw_src=10.0.0.12,nw_dst=10.0.0.14 red=7
+fvctl -n add-flowspace rfs14 14 1 in_port=4,nw_src=10.0.0.14,nw_dst=10.0.0.12 red=7
+
+#-----------c4
+
+fvctl -n add-flowspace rfs15 20 1 in_port=3,nw_src=10.0.0.12,nw_dst=10.0.0.14 red=7
+fvctl -n add-flowspace rfs16 20 1 in_port=4,nw_src=10.0.0.14,nw_dst=10.0.0.12 red=7
+
+#-----------a8
+
+fvctl -n add-flowspace rfs17 16 1 in_port=4,nw_src=10.0.0.12,nw_dst=10.0.0.14 red=7
+fvctl -n add-flowspace rfs18 16 1 in_port=1,nw_src=10.0.0.14,nw_dst=10.0.0.12 red=7
+
+#-----------e7
+
+fvctl -n add-flowspace rfs19 7 1 in_port=4,nw_src=10.0.0.12,nw_dst=10.0.0.14 red=7
+fvctl -n add-flowspace rfs20 7 1 in_port=2,nw_src=10.0.0.14,nw_dst=10.0.0.12 red=7
+
+#-----------h13 to h14
+
+#-----------e7
+
+fvctl -n add-flowspace rfs21 7 1 in_port=1,nw_src=10.0.0.13,nw_dst=10.0.0.14 red=7
+fvctl -n add-flowspace rfs22 7 1 in_port=2,nw_src=10.0.0.14,nw_dst=10.0.0.13 red=7

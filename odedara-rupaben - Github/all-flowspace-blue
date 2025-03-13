@@ -1,0 +1,79 @@
+#-----------h9 h10  h11 h12 e-5 a5 a6  e6
+
+#-----------h9 to h10 
+
+#------------e5
+fvctl -n add-flowspace bfs1 5 1 in_port=1,nw_src=10.0.0.9,nw_dst=10.0.0.10 blue=7
+
+fvctl -n add-flowspace bfs2 5 1 in_port=2,nw_src=10.0.0.10,nw_dst=10.0.0.9 blue=7
+
+#-----------h9 to h11
+
+#..............e5
+fvctl -n add-flowspace bfs3 5 1 in_port=1,nw_src=10.0.0.9,nw_dst=10.0.0.11 blue=7
+fvctl -n add-flowspace bfs4 5 1 in_port=4,nw_src=10.0.0.11,nw_dst=10.0.0.9 blue=7
+ #-------------a6
+fvctl -n add-flowspace bfs5 14 1 in_port=1,nw_src=10.0.0.9,nw_dst=10.0.0.11 blue=7
+fvctl -n add-flowspace bfs6 14 1 in_port=2,nw_src=10.0.0.11,nw_dst=10.0.0.9 blue=7
+
+
+#-----------e6
+
+fvctl -n add-flowspace bfs7 6 1 in_port=4,nw_src=10.0.0.9,nw_dst=10.0.0.11 blue=7
+fvctl -n add-flowspace bfs8 6 1 in_port=1,nw_src=10.0.0.11,nw_dst=10.0.0.9 blue=7
+
+
+
+#-----------h9 to h12
+fvctl -n add-flowspace bfs9 5 1 in_port=1,nw_src=10.0.0.9,nw_dst=10.0.0.12 blue=7
+fvctl -n add-flowspace bfs10 5 1 in_port=4,nw_src=10.0.0.12,nw_dst=10.0.0.9 blue=7
+
+ #-------------a6
+fvctl -n add-flowspace bfs11 14 1 in_port=1,nw_src=10.0.0.9,nw_dst=10.0.0.12 blue=7
+fvctl -n add-flowspace bfs12 14 1 in_port=2,nw_src=10.0.0.12,nw_dst=10.0.0.9 blue=7
+
+#-----------e6
+
+fvctl -n add-flowspace bfs13 6 1 in_port=4,nw_src=10.0.0.9,nw_dst=10.0.0.12 blue=7
+fvctl -n add-flowspace bfs14 6 1 in_port=2,nw_src=10.0.0.12,nw_dst=10.0.0.9 blue=7
+
+
+
+#-----------h10 - h11
+
+#..............e5
+fvctl -n add-flowspace bfs15 5 1 in_port=2,nw_src=10.0.0.10,nw_dst=10.0.0.11 blue=7
+fvctl -n add-flowspace bfs16 5 1 in_port=4,nw_src=10.0.0.11,nw_dst=10.0.0.10 blue=7
+
+ #-------------a6
+fvctl -n add-flowspace bfs17 14 1 in_port=1,nw_src=10.0.0.10,nw_dst=10.0.0.11 blue=7
+fvctl -n add-flowspace bfs18 14 1 in_port=2,nw_src=10.0.0.11,nw_dst=10.0.0.10 blue=7
+
+
+#-----------e6
+
+fvctl -n add-flowspace bfs19 6 1 in_port=4,nw_src=10.0.0.10,nw_dst=10.0.0.11 blue=7
+fvctl -n add-flowspace bfs20 6 1 in_port=1,nw_src=10.0.0.11,nw_dst=10.0.0.10 blue=7
+
+#-----------h10 -h12
+
+#..............e5
+fvctl -n add-flowspace bfs21 5 1 in_port=2,nw_src=10.0.0.10,nw_dst=10.0.0.12 blue=7
+fvctl -n add-flowspace bfs22 5 1 in_port=4,nw_src=10.0.0.12,nw_dst=10.0.0.10 blue=7
+
+ #-------------a6
+fvctl -n add-flowspace bfs23 14 1 in_port=1,nw_src=10.0.0.10,nw_dst=10.0.0.12 blue=7
+fvctl -n add-flowspace bfs24 14 1 in_port=2,nw_src=10.0.0.12,nw_dst=10.0.0.10 blue=7
+
+
+#-----------e6
+
+fvctl -n add-flowspace bfs25 6 1 in_port=4,nw_src=10.0.0.10,nw_dst=10.0.0.12 blue=7
+fvctl -n add-flowspace bfs26 6 1 in_port=2,nw_src=10.0.0.12,nw_dst=10.0.0.10 blue=7
+
+#-----------h11 h12
+
+#------------e6
+fvctl -n add-flowspace bfs27 6 1 in_port=1,nw_src=10.0.0.11,nw_dst=10.0.0.12 blue=7
+
+fvctl -n add-flowspace bfs28 6 1 in_port=2,nw_src=10.0.0.12,nw_dst=10.0.0.11 blue=7
